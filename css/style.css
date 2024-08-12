@@ -129,24 +129,26 @@ body {
         height: auto;
     }
 
-    .project__container {
+    .management__container {
         width: auto;
-        height: 1587px;
+        height: 1586px;
         padding: 80px 16px;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
-        /* gap: 100px; */
+        row-gap: 100px;
     }
 
-    .project__content {
+    .project__content,
+    .work__content {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    .project__h4 {
+    .project__h4,
+    .work__h4 {
         margin-top: auto;
         margin-bottom: 24px;
 
@@ -158,8 +160,10 @@ body {
         text-align: center;
     }
 
-    .project__p {
+    .project__p,
+    .work__p {
         margin-top: auto;
+        margin-bottom: 0;
 
         font-family: Inter;
         font-size: 18px;
@@ -169,8 +173,9 @@ body {
         text-align: center;
     }
 
-    .project__button-start {
-        height: 70px;
+    .project__button-start,
+    .work__button-try-it {
+        height: auto;
         background-color: #4285F4;
         color: white;
         border: none;
@@ -184,18 +189,24 @@ body {
         align-items: center;
         justify-content: center;
         gap: 8px; /* Space between text and icon */
-        margin: 60px auto;
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .image-container-project {
+    .image__container-project,
+    .image__container-work {
         width: 100%;
-        margin-bottom: 100px;
     }
 
-    .project__image {
+    .project__image,
+    .work__image {
         width: 100%;
         height: auto;
+        margin-top: 60px;
     }
+
+
    
 /* Tablet */
 @media screen and (min-width: 768px) {
@@ -223,24 +234,59 @@ body {
         height: 1050px;
     }
 
-    .hero__h4 {
+    .management__container {
+        height: auto;
+        padding: 100px 20px;
+    }
+
+    .hero__h4,
+    .project__h4,
+    .work__h4 {
         font-size: 54px;
         font-weight: 700px;
         line-height: 66px;
     }
 
-    .image-container {
+    .image-container,
+    .image__container-project,
+    .image__container-work {
         width: 100%;
     }
 
-    .hero__image {
+    .hero__image{
         width: 100%;
         height: auto;
         max-width: 551px;
         display: block;
         margin: 0 auto;
     }
-  
+
+    .project__image {
+        width: 100%;
+        height: auto;
+        max-width: 551px;
+        display: block;
+        margin: 60px auto 0 auto;
+    }
+    .work__image {
+        width: 100%;
+        height: auto;
+        max-width: 551px;
+        display: block;
+        margin: 100px auto 0 auto;
+    }
+
+   
+
+    .project__image-work {
+        width: 100%;
+        height: auto;
+        max-width: 551px;
+        display: block;
+        margin: 60px auto 100px auto;
+        
+    }
+
 }
 
 /* Desktop 1152px */
@@ -306,18 +352,22 @@ body {
         margin-left: 10px;
     }
 
-    .hero__container {
+    .hero__container,
+    .project__container {
         display: flex;
         flex-direction: row;
         padding: 140px 32px;
     }
 
-    .hero__content {
+    .hero__content,
+    .project__content,
+    .work__content {
         width: 50%;
         text-align: left;
     }
 
-    .hero__h4 {
+    .hero__h4,
+    .project__h4 {
         font-size: 64px;
         font-weight: 700;
         line-height: 78px;
@@ -325,23 +375,29 @@ body {
         margin-bottom: 24px;
     }
     
-    .hero__p {
+    .hero__p,
+    .project__p {
         text-align: left;
     }
 
-    .hero__button {
+    .hero__button,
+    .project__button-start,
+    .project__button-try-it {
         margin-left: 0;
         height: auto;
         padding: 20px;
     }
 
-    .image-container {
+    .image-container,
+    .image-container-project,
+    .image-container-work {
         width: auto;
         display: flex;
         justify-content: flex-end; /* Aligns the image to the right */
     }
     
-    .hero__image {
+    .hero__image,
+    .project__image {
         object-fit: scale-down;
         margin-bottom: 420px;
     }
