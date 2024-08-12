@@ -128,8 +128,75 @@ body {
         width: 100%;
         height: auto;
     }
- 
-    
+
+    .project__container {
+        width: auto;
+        height: 1587px;
+        padding: 80px 16px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        /* gap: 100px; */
+    }
+
+    .project__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .project__h4 {
+        margin-top: auto;
+        margin-bottom: 24px;
+
+        font-family: Inter;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 43.57px;
+        letter-spacing: -0.02em;
+        text-align: center;
+    }
+
+    .project__p {
+        margin-top: auto;
+
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: -0.02em;
+        text-align: center;
+    }
+
+    .project__button-start {
+        height: 70px;
+        background-color: #4285F4;
+        color: white;
+        border: none;
+        padding: 20px 40px;
+        font-family: Inter;
+        font-size: 16px;
+        border-radius: 8px;
+        white-space: nowrap;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px; /* Space between text and icon */
+        margin: 60px auto;
+    }
+
+    .image-container-project {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .project__image {
+        width: 100%;
+        height: auto;
+    }
+   
 /* Tablet */
 @media screen and (min-width: 768px) {
     .header {
