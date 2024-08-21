@@ -138,7 +138,8 @@ body {
         row-gap: 100px;
     }
 
-    .project__content {
+    .project__content,
+    .customise__content {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -153,7 +154,8 @@ body {
         text-align: center;
     }
 
-    .project__h4 {
+    .project__h4,
+    .customise__h4 {
         margin-top: auto;
         margin-bottom: 24px;
 
@@ -177,7 +179,8 @@ body {
         text-align: center;
     }
 
-    .project__p {
+    .project__p,
+    .customise__p {
         margin-top: auto;
         margin-bottom: 0;
 
@@ -201,7 +204,8 @@ body {
     }
 
     .project__button-start,
-    .work__button-try-it {
+    .work__button-try-it ,
+    .customise__button-let-go {
         height: auto;
         background-color: #4285F4;
         color: white;
@@ -223,11 +227,17 @@ body {
 
     .image-container-hero,
     .image__container-project,
-    .image__container-work {
+    .image__container-work,
+    .image__container-customise {
         width: 100%;
     }
 
     .project__image {
+        width: 100%;
+        height: auto;
+    }
+
+    .customise__image {
         width: 100%;
         height: auto;
     }
@@ -247,12 +257,25 @@ body {
         /* transform: rotate(90deg); */
     }
 
-    .project__body-content{
+    .project__body-content {
         position: relative;
     }
-    .work__body-content{
+
+    .work__body-content ,
+    .customise__body-content {
         position: relative;
     }
+
+    .customise__container{
+        width: auto;
+        height: auto;
+        padding: 80px 16px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+    }
+
  
 /* Tablet */
 @media screen and (min-width: 768px) {
@@ -319,6 +342,15 @@ body {
         margin-right: auto;
     }
 
+    .customise__image {
+        width: 100%;
+        height: auto;
+        max-width: 557px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .work__image {
         width: 100%;
         height: auto;
@@ -343,6 +375,10 @@ body {
         width: 233px;
         height: 38px;
         background-size: 233px 38px;
+    }
+
+    .customise__container {
+        padding: 100px 32px;
     }
 
 }
@@ -415,7 +451,8 @@ body {
         padding: 140px 32px; 
     }
 
-    .management__container {
+    .management__container,
+    .customise__container {
         width: 100%;
         padding: 140px 32px;
     }
@@ -426,7 +463,8 @@ body {
         column-gap: 24px;
     }
 
-    .project__content {
+    .project__content,
+    .customise__content {
        flex-direction: row;
        column-gap: 92px;
     }
@@ -449,7 +487,8 @@ body {
 
     .hero__h4,
     .project__h4,
-    .work__h4 {
+    .work__h4,
+    .customise__h4 {
         font-size: 64px;
         font-weight: 700;
         line-height: 78px;
@@ -459,13 +498,15 @@ body {
 
     .hero__p,
     .project__p,
-    .work__p {
+    .work__p,
+    .customise__p {
         text-align: left;
     }
 
     .hero__button,
     .project__button-start,
-    .project__button-try-it {
+    .project__button-try-it,
+    .customise__button-let-go {
         margin-left: 0;
         height: auto;
         padding: 20px;
@@ -483,7 +524,8 @@ body {
         height: 350px;
     }
 
-    .image__container-project{
+    .image__container-project,
+    .image__container-customise {
         min-width: 560px;
         width: 560px;
         height: 385px;
@@ -495,7 +537,8 @@ body {
     }
 
     .hero__image,
-    .project__image {
+    .project__image,
+    .customise__image {
         object-fit: cover;
     }
 
@@ -504,7 +547,8 @@ body {
     }
     
     .hero__image,
-    .project__image {
+    .project__image,
+    .customise__image {
         width: 100%;
         height: 100%;
     }
@@ -637,7 +681,8 @@ body {
         padding: 20px;
     }
 
-    .management__container {
+    .management__container ,
+    .customise__container {
         width: 100%;
         padding: 140px 32px;
     }
@@ -645,6 +690,11 @@ body {
     .project__content {
         flex-direction: row;
         column-gap: 10px;
+    }
+
+    .customise__content {
+        flex-direction: row;
+        column-gap: 98px;
     }
 
     .work__content {
@@ -658,13 +708,20 @@ body {
         height: 324px;
     }
 
+    .customise__body-content {
+        min-width: 592px;
+        width: 592px;
+        height: 411px;
+    }
+
     .project__body-content {
         min-width: 657px;
         width: 657px;
         height: 411px;
     }
 
-    .project__h4 {
+    .project__h4,
+    .customise__h4 {
         font-family: Inter;
         font-size: 72px;
         font-weight: 700;
@@ -678,11 +735,19 @@ body {
         width: 685px;
         height: 457px;
     }
+
     .project__image {
         object-fit: cover;
         min-width: 719px;
         width: 719px;
         height: 448px;
+    }
+
+    .customise__image {
+        object-fit: cover;
+        min-width: 676px;
+        width: 676px;
+        height: 479px;
     }
 
     .work__image {
@@ -703,7 +768,8 @@ body {
         margin-right: 160px;
     }
     
-    .image__container-project {
+    .image__container-project,
+    .image__container-customise {
         width: 100%;
         height: 100%;
     }
@@ -801,7 +867,8 @@ body {
         padding: 140px 220px;
     }
 
-    .management__container {
+    .management__container,
+    .customise__container {
         width: 100%;
         padding: 140px 220px;
     }
@@ -815,6 +882,11 @@ body {
     .project__content {
         flex-direction: row;
         column-gap: 60px;
+    }
+
+    .customise__content {
+        flex-direction: row;
+        column-gap: 98px;
     }
 
     .work__content {
@@ -838,6 +910,11 @@ body {
         height: 411px;
     }
 
+    .customise__body-content {
+        width: 697px;
+        height: 381px;
+    }
+
     .hero__h4 {
         font-size: 64px;
         font-weight: 700;
@@ -847,7 +924,8 @@ body {
     }
 
     .project__h4,
-    .work__h4 {
+    .work__h4,
+    .customise__h4 {
         font-size: 72px;
         font-weight: 700;
         line-height: 88px;
@@ -856,7 +934,8 @@ body {
     }
 
     .project__p,
-    .work__p {
+    .work__p,
+    .customise__p {
         font-size: 18px;
         font-weight: 400;
         line-height: 30px;
@@ -901,10 +980,15 @@ body {
     }
 
     .project__image {
-
         min-width: 748px;
         width: 748px;
         height: 547px;
+    }
+
+    .customise__image {
+        min-width: 686px;
+        width: 686px;
+        height: 479px;
     }
     
     .hero__image {
