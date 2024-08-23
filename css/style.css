@@ -574,7 +574,6 @@ body {
 
     .hero__content {
         flex-direction: row;
-        /* column-gap: 92px; */
         column-gap: 24px;
     }
 
@@ -586,7 +585,6 @@ body {
     .our__content {
         flex-direction: row;
         justify-content: space-between;
-        /* gap: 0; */
         column-gap: 85px;
         height: 71px;
     }
