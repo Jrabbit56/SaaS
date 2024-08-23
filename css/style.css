@@ -149,7 +149,8 @@ body {
     }
 
     .management__container,
-    .your-data__container {
+    .your-data__container,
+    .our__container {
         width: auto;
         height: auto;
         padding: 80px 16px;
@@ -211,13 +212,7 @@ body {
         row-gap: 60px;
     }
 
-    .work__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
+    .work__content,
     .your-data__content {
         display: flex;
         flex-direction: column;
@@ -225,12 +220,21 @@ body {
         text-align: center;
     }
 
+    .our__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        gap: 100px;
+    }
+
     .project__h4,
     .work__h4,
     .customise__h4,
     .choose__h4,
     .your-work__h4,
-    .your-data__h4 {
+    .your-data__h4,
+    .our__h4 {
         margin-top: auto;
         margin-bottom: 24px;
 
@@ -291,12 +295,39 @@ body {
     .image-container-hero,
     .image__container-project,
     .image__container-work,
-    .image__container-customise,
-    .image__container-your-data {
+    .image__container-customise {
         width: 100%;
     }
 
     .project__image {
+        width: 100%;
+        height: auto;
+    }
+
+    .microsoft__image-container {
+        min-width: 213px;
+        width: 213px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slack__image-container {
+        min-width: 192px;
+        width: 192px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .google__image-container {
+        min-width: 140px;
+        width: 140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .microsoft__image,
+    .slack__image,
+    .google__image {
         width: 100%;
         height: auto;
     }
@@ -358,7 +389,8 @@ body {
     }
 
     .your-work__container,
-    .your-data__container {
+    .your-data__container,
+    .our__container {
         height: auto;
         padding: 140px 20px;
     }
@@ -372,7 +404,8 @@ body {
     .project__h4,
     .work__h4,
     .your-work__h4,
-    .your-data__h4 {
+    .your-data__h4,
+    .our__h4 {
         font-size: 54px;
         font-weight: 700px;
         line-height: 66px;
@@ -414,6 +447,27 @@ body {
         margin-right: auto;
     }
 
+    .microsoft__image-container {
+        min-width: 287px;
+        width: 287px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slack__image-container {
+        min-width: 280px;
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .google__image-container {
+        min-width: 211px;
+        width: 211px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .work__image {
         width: 100%;
         height: auto;
@@ -427,8 +481,7 @@ body {
         height: auto;
         max-width: 551px;
         display: block;
-        margin: 60px auto 100px auto;
-        
+        margin: 60px auto 100px auto;  
     }
 
     .yellow__underline {
@@ -513,7 +566,8 @@ body {
     .management__container,
     .customise__container,
     .your-work__container,
-    .your-data__container {
+    .your-data__container,
+    .our__container {
         width: 100%;
         padding: 140px 32px;
     }
@@ -527,6 +581,14 @@ body {
     .your-work__content {
         height: auto;
         margin-right: 470px;
+    }
+
+    .our__content {
+        flex-direction: row;
+        justify-content: space-between;
+        /* gap: 0; */
+        column-gap: 85px;
+        height: 71px;
     }
 
     .project__content,
@@ -572,6 +634,15 @@ body {
         text-align: left;
         margin-bottom: 24px;
     }
+
+    .our__h4 {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
 
     .hero__p,
     .project__p,
@@ -637,6 +708,27 @@ body {
         width: 100%;
         height: 100%;
         margin: 0;
+    }
+
+    .microsoft__image-container {
+        min-width: 287px;
+        width: 287px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slack__image-container {
+        min-width: 280px;
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .google__image-container {
+        min-width: 211px;
+        width: 211px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
@@ -764,7 +856,8 @@ body {
     .management__container ,
     .customise__container,
     .your-work__container,
-    .your-data__container {
+    .your-data__container,
+    .our__container {
         width: 100%;
         padding: 140px 32px;
     }
@@ -827,13 +920,18 @@ body {
     .project__h4,
     .customise__h4,
     .your-work__h4,
-    .your-data__h4 {
+    .your-data__h4,
+    .our__h4 {
         font-family: Inter;
         font-size: 72px;
         font-weight: 700;
         line-height: 88px;
         text-align: left;
         letter-spacing: -0.02em;
+    }
+
+    .our__h4 {
+        text-align: center;
     }
 
     .your-work__p {
@@ -891,6 +989,12 @@ body {
     .image__container-your-data {
         width: 100%;
         height: 100%;
+    }
+
+    .microsoft__image-container,
+    .slack__image-container,
+    .google__image-container {
+        margin: 0;
     }
 
 }
@@ -989,7 +1093,8 @@ body {
     .management__container,
     .customise__container,
     .your-work__container,
-    .your-data__container {
+    .your-data__container,
+    .our__container {
         width: 100%;
         padding: 140px 220px;
     }
@@ -1141,6 +1246,11 @@ body {
         height: 549px; 
     }
     
+    .microsoft__image-container,
+    .slack__image-container,
+    .google__image-container {
+        margin: 0;
+    }
 }
 
 
